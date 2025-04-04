@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Sentiment Over Time</h1>
+    <img src="data:image/png;base64,{{ trend_viz }}" alt="Sentiment Trend"><br><br>
+
+    <h1>Topic-Based Sentiment</h1>
+    <img src="data:image/png;base64,{{ topic_viz }}" alt="Topic Sentiment"><br><br>
+
+    <h1>Election Prediction</h1>
+    <img src="data:image/png;base64,{{ election_viz }}" alt="Prediction"><br><br>
+
+    <h2>Sentiment Data (Table)</h2>
+    {{ sentiment_over_time | safe }}
+</body>
+</html>
